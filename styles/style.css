@@ -317,6 +317,17 @@ margin-bottom: 100px;
     gap: 150px;
     margin-bottom: 130px;
 }
+/* contract section */
+.contract {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: color: #727272;
+    margin-bottom: 100px;
+}
+
+
 /* footer section style */
 .footer {
     width: 1440px;
