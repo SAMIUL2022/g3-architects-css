@@ -10,7 +10,8 @@ body {
 /* header section style
     */
 .header-container {
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     height: 1322px;
     background-color:rgba(255, 144, 14, 0.1);
     margin-bottom: 91px;}
@@ -49,8 +50,8 @@ body {
 
 }
 .banner-detail {
-    
-    width: 862px;
+    width: 100%;
+   max-width:  862px;
     height: 225px;
     color: #131313;
     margin-left: 607px;
@@ -64,10 +65,9 @@ body {
 
 }
 .banner-para {
-    width: 868px;
+    width: 100%;
+    max-width: 868px;
     height: 52px;
-    font-weight: 400;
-    font-size: 16px;
     text-align: center;
     color: #727272;
     margin-top: 30px;
@@ -85,14 +85,16 @@ body {
     margin-bottom: 50px;
     margin-left: 948px;
     margin-right: 792px;
-  background-color:#FF900E;
-  border-radius: 8px;
+    background-color:#FF900E;
+    border-radius: 8px;
 }
 .banner-pic {
     display: flex;
     justify-content: center;    
 }
 .feature-container {
+    max-width: 1920px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,8 +117,8 @@ body {
  .feature-detail {
     display: flex;
     flex-direction: column;
-   
-    width: 537px;
+   width: 100%;
+   max-width: 537px;
     height: 304px;
     margin-top: 150px;
     margin-right: 297px;
@@ -241,23 +243,29 @@ margin-right: 476px  ;
 /* facts section style*/
 .facts {
     margin-left: 240px;
+    margin-top: 100px;
 }
 .facts-title {
     width: 258px;
-height: 53px;
-font-weight: 700;
-font-size: 45px;
-color: #131313;
-margin-bottom: 25px;
+    height: 53px;
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
 }
 .facts-para {
     width: 542px;
 height: 52px;
 font-size: 16px;
 color: #727272;
+margin-bottom: 100px;
 
 }
 .facts-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 241.83px;
     height: 241.83px;
     border: 1px solid #FF900E;
@@ -265,9 +273,130 @@ color: #727272;
     padding: 45px 40px;
 
 }
+.state-box :hover {
+    transform: scale(.5);
+}
 .state-box {
     display: flex;
     justify-content: space-around;
     margin-left: 326px;
+    margin-top: 100px;
 
+}
+/* sponsor section */
+
+.sponsor-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    
+    height: 129px;
+}
+.sponsor-title {
+    width: 327px;
+    height: 53px;
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+}
+.sponsor-para {
+    width: 542px;
+    height: 52px;
+    color: #727272;
+    font-size: 16px;
+    text-align: center;
+}
+.sponsor-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 130px;
+}
+/* footer section style */
+.footer {
+    width: 1440px;
+    height: 100px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-bottom: 220px;
+
+}
+.footer-para {
+    width: 620px;
+    height: 23px;
+    font-size: 20px;
+    color: #424242;
+    padding: 40px 410px;
+
+}
+
+
+/* responsive style */
+/* small devices */
+@media only screen and (max-width:576px) {
+    
+        
+    
+        .nav-container,.nav-info {
+            flex-direction: column;
+        }
+        .nav-title {
+            margin-left: 100px;
+        }
+    .nav-menu {
+        margin-bottom: 250px;
+    }
+    .banner-title,.banner-para,.primary-btn {
+        font-size: 20px;
+        text-align: justify;
+    
+        
+            }
+            .banner-para {
+                width: 300px;
+                height: 200px;
+                text-align: left;
+
+            }
+            .banner-title {
+                margin-left: ;
+            }
+.banner-detail,.primary-btn {
+    margin-left: 180px;
+     
+}
+
+
+.banner-pic {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.feature-container {
+    margin-left: 20px;
+    
+    flex-direction: column;
+    
+}
+.feature-pic {
+    grid-template-columns: repeat(1,1fr);
+}
+.feature-detail {
+    flex-direction: column;
+
+}
+.facts-box,.state-box,.sponsor-pic {
+    flex-direction: column;
+}
 }
